@@ -345,33 +345,40 @@
 }
 
 .sakura {
-	background: #ff8d9c;
+	background: gray;
 }
 
 
 /*******************************/
 
-body {
-	
-	background-color: #ffffff;
-}
 
-img.top-right-decoration,.top-left-decoration {
-	max-width: 35%;
+img.top-right-decoration, img.top-left-decoration {
+	max-width: 45%;
 	/* height: 60%; */
 }
-img.bottom{
-	max-width: 80%;
+img.bottom-right-decoration,.bottom-left-decoration {
+	max-width: 45%;
+	/* height: 60%; */
 }
-@media (max-width:500px) {
-	img .top-right-decoration, .top-left-decoration{
+
+@media only screen and (max-width:1000px) {
+	img.top-right-decoration, img.top-left-decoration{
 		max-width: 55%;
 	}
-	img.bottom{
-		max-width:90%;
+	img.bottom-right-decoration, img.bottom-left-decoration{
+		max-width:55%;
 	}
-
 }
+@media only screen and (max-width:500px) {
+	img.top-right-decoration, img.top-left-decoration{
+		max-width: 45%;
+	}
+	img.bottom-right-decoration, img.bottom-left-decoration{
+		max-width:45%;
+	}
+}
+
+
 
 
 
@@ -389,11 +396,17 @@ img.bottom{
 	display: block;
 }
 
-.bottom {
-	position: relative;
-	bottom: 0%;
+.bottom-right-decoration {
+	position: fixed;
+	bottom:0;
 	left: 0;
-	display:inline-block;
+	display:block;
+}
+.bottom-left-decoration {
+	position:fixed;
+	bottom:0;
+	right: 0;
+	display:block;
 }
 
 .title h1 {
@@ -402,18 +415,18 @@ img.bottom{
 	font-style: normal;
 	font-size: 50px;
 	margin: 15px 0;
-	color: #ad053d;
+	color: #00e4d8;
 }
 
 .title h2 {
-	font-family: 'Dancing Script', cursive;
-	font-weight: bold;
+	font-weight: lighter;
 	font-style: normal;
-	margin: 0;
-	padding: 0;
-	font-size: 24px;
-	color: #564861;
-	line-height: 1;
+	padding: 10px 6em;
+	margin: 30px 0 20px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 16px;
+	color: #797979;
 }
 
 .dance-med {
@@ -422,7 +435,7 @@ img.bottom{
 	font-style: normal;
 	font-size: 32px;
 	color: #d4d4d4;
-	color: #24044e;
+
 	margin: 16px;
 	margin-top: 2em;
 	text-align: center;
@@ -434,26 +447,28 @@ img.bottom{
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 24px;
-	color: #564861;
 	margin-top: 5px;
+
 }
 
 .title p{
-	color: #564861;
+	color: #797979;
 	margin: 30px 0 20px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 16px;
+	padding: 10px 20%;
+
 }
 .title-2 p {
-	color: #564861;
+	color: #797979;
 	margin: 10px  20px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 16px;
 }
 
-.wrap {
+.wrap{
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-wrap: wrap;
@@ -473,7 +488,7 @@ img.bottom{
 * {
 	/* margin: 0;
     padding: 0; */
-	font-family: Garamond;
+	font-family:'Times New Roman', Times, serif
 }
 
 body {
@@ -483,11 +498,13 @@ body {
 	/* height: 100vh;
     width: 100%; */
 	flex-direction: column;
+	;
+	
 }
 
 .title {
 	margin-bottom: 10px;
-	margin-top: 60px;
+	margin-top: 110px;
 }
 .title-2  {
 	margin-bottom: 0px;
@@ -505,10 +522,11 @@ body {
 .venue {
 	width: auto;
 	height: auto;
-	background-color: #ad053d;
+	background-color: #00e4d8;
+
 	border-radius: 10px;
 	text-align: center;
-	color: #fff;
+	color: rgb(109, 107, 107);
 	padding: 8px 14px;
 	margin-right: 8px;
 }
@@ -536,36 +554,36 @@ body {
 }
 
 .days {
-	background: linear-gradient(90deg, #b33a46, #9b313c);
+	background-color: #00e4d8;
 }
 
 .hours {
-	background: linear-gradient(90deg, #a7c3cd, #90a9b2);
+	background-color:rgb(231, 221, 221);
 }
 
 .minutes {
-	background-color: #874562;
+	background-color: #f7cfaa;
 }
 
 .seconds {
-	background-color: #145689;
+	background-color: #fab6c7;
 }
 
 .date {
-	color: #874562;
+
 	font-weight: 900;
 }
 
 .place {
-	color: #874562;
 	font-weight: 900;
 }
 
 .footer {
 	color: #564861;
 	text-align: center;
-	font-size: 8px;
-	margin: 40px;
+	font-size: 7px;
+	margin-top: 40px;
+
 }
 
 .phone {
@@ -616,7 +634,7 @@ button{
 	height: auto;
 	border-radius: 10px;
 	text-align: center;
-	color:#ad053d ;
+	color:#6a6b6b ;
 	padding: 4px 10px;
 	margin-right: 8px;
 }

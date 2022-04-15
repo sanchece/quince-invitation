@@ -371,7 +371,7 @@ img.bottom-right-decoration,.bottom-left-decoration {
 }
 @media only screen and (max-width:500px) {
 	img.top-right-decoration, img.top-left-decoration{
-		max-width: 52%;
+		max-width: 55%;
 	}
 	img.bottom-right-decoration, img.bottom-left-decoration{
 		max-width:45%;

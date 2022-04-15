@@ -371,7 +371,7 @@ img.bottom-right-decoration,.bottom-left-decoration {
 }
 @media only screen and (max-width:500px) {
 	img.top-right-decoration, img.top-left-decoration{
-		max-width: 45%;
+		max-width: 52%;
 	}
 	img.bottom-right-decoration, img.bottom-left-decoration{
 		max-width:45%;
@@ -413,7 +413,7 @@ img.bottom-right-decoration,.bottom-left-decoration {
 	font-family: 'Dancing Script', cursive;
 	font-weight: bold;
 	font-style: normal;
-	font-size: 50px;
+	font-size: 40px;
 	margin: 15px 0;
 	color: #00e4d8;
 }
@@ -434,7 +434,7 @@ img.bottom-right-decoration,.bottom-left-decoration {
 	font-weight: bolder;
 	font-style: normal;
 	font-size: 32px;
-	color: #d4d4d4;
+	color: #afaaaa;
 
 	margin: 16px;
 	margin-top: 2em;
